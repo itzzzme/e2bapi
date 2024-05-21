@@ -1,8 +1,8 @@
-# <p align="center">Anime API</p>
+# <p align="center">E2B API</p>
 
 >
 
-<p align="center">API made with Node.js ( scrape data primarily from <a href="https://hianime.to" target="_blank">hianime.to</a> and secondarily from <a href="https://kaido.to" target="_blank">kaido.to</a> )</p>
+<p align="center">API made with Node.js</p>
 
 # <span style="color:red">! Disclaimer !</span>
 
