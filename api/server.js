@@ -4,7 +4,7 @@ import { sanitizeParams } from "../src/helper/sanitizer.helper.js";
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
   res.json("English to Bengali dictionary API");
 });
 
