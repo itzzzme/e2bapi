@@ -5,12 +5,12 @@ import { sanitizeParams } from "../src/helper/sanitizer.helper.js";
 const port = process.env.PORT || 4444;
 const app = express();
 
-app.get('/',(req, res) => {
-  res.json("Hello World!");
-})
+app.get("/", (req, res) => {
+  res.json({ Message: "Hello World!" });
+});
 
 app.get("/api", (req, res) => {
-  res.json("English to Bengali dictionary API");
+  res.json({ Message: "English to Bengali dictionary API" });
 });
 
 app.get("/api/:word", sanitizeParams, async (req, res) => {
@@ -18,7 +18,7 @@ app.get("/api/:word", sanitizeParams, async (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.status(404).json("Bad Request!");
+  res.status(404).json({ Message: "Bad Request!" });
 });
 
 app.listen(port, () => {
