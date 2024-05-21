@@ -8,9 +8,7 @@
 
 1.  Please don't spam the `api`. This `api` is deployed on a free web service. You can clone this repository on your local server for testing purposes.
 
-2.  This `api` does not store any files , it only link to the media which is hosted on 3rd party services.
-
-3.  This `api` is explicitly made for educational purposes only and not for commercial usage. This repo will not be responsible for any misuse of it.
+2.  This `api` is not made for commercial usage.
 
 > <h2> Table of Contents </h2>
 
@@ -62,7 +60,7 @@ Host your own instance of e2bapi on Render.
 ### Endpoint
 
 ```bash
-  https://e2bapi.onrender.com//api/
+  https://e2bapi.onrender.com/api/
 ```
 
 > #### No parameter required ❌
@@ -71,8 +69,82 @@ Host your own instance of e2bapi on Render.
 
 ```javascript
 import axios from "axios";
-const resp = await axios.get("https://e2bapi.onrender.com//api/");
+const resp = await axios.get("https://e2bapi.onrender.com/api/");
 console.log(resp.data);
 ```
 
 #### Sample Response
+
+```javascript
+{
+  "Message": English to Bengali dictionary API,
+}
+```
+
+### `Get` Meaning of a word
+
+```bash
+  GET /api/word
+```
+
+### Endpoint
+
+```bash
+  https://e2bapi.onrender.com/api/word
+```
+
+#### Parameters
+
+| Parameter |  Type  | Description | Mandatory ? | Default |
+| :-------: | :----: | :---------: | :---------: | :-----: |
+|   `id`    | string |    word     |   Yes ✔️    |   --    |
+
+#### Example of request
+
+```javascript
+import axios from "axios";
+const resp = await axios.get("https://e2bapi.onrender.com/api/hello");
+console.log(resp.data);
+```
+
+#### Sample Response
+
+```javascript
+{
+    "success":true,
+    "results": {
+        "word":string,
+        "meaning":[
+            string,
+            string
+        ],
+        "nearbyWords":[
+            string,
+            string,
+            string,
+            string,
+            string,
+            string
+        ]
+    }
+}
+
+```
+
+>### Pull Requests
+
+- Pull requests are welcomed that address bug fixes, improvements, or new features.
+- Fork the repository and create a new branch for your changes.
+- Ensure your code follows our coding standards.
+- Include tests if applicable.
+- Describe your changes clearly in the pull request, explaining the problem and solution.
+
+>### Reporting Issues
+
+If you discover any issues or have suggestions for improvement, please open an issue. Provide a clear and concise description of the problem, steps to reproduce it, and any relevant information about your environment.
+
+>### Support
+If you like the project feel free to drop a star ✨. Your appreciation means a lot.
+
+<p align="center" style="text-decoration: none;">Made by <a href="https://github.com/itzzzme" target="_blank">itzzzme 
+</a>🫰</p>
