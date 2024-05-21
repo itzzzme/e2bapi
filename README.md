@@ -97,7 +97,7 @@ console.log(resp.data);
 
 | Parameter |  Type  | Description | Mandatory ? | Default |
 | :-------: | :----: | :---------: | :---------: | :-----: |
-|   `id`    | string |    word     |   Yes ✔️    |   --    |
+|   `params`    | string |    word     |   Yes ✔️    |   --    |
 
 #### Example of request
 
