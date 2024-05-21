@@ -18,7 +18,7 @@ app.get("/api/:word", sanitizeParams, async (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.json("Bad Request!");
+  res.status(404).json("Bad Request!");
 });
 
 app.listen(port, () => {

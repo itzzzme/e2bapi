@@ -6,8 +6,8 @@ export const getResponse = async (req, res) => {
   try {
     const meaning = await getMeaning(word);
     const nearbyWords = await getNearbyWords(word);
-    res.json({ word, meaning, nearbyWords });
+    res.json({ success: true, results: { word, meaning, nearbyWords } });
   } catch (error) {
-    res.status(500).json({ error: "Error fetching data" });
+    res.status(500).json({ success: false, error: "Error fetching data" });
   }
 };
