@@ -2,7 +2,7 @@
 
 >
 
-<p align="center">API made with Node.js</p>
+## <p align="center">API made with Node.js</p>
 
 # <span style="color:red">! Disclaimer !</span>
 
