@@ -60,7 +60,7 @@ Host your own instance of e2bapi on Render.
 ### Endpoint
 
 ```bash
-  https://e2bapi.onrender.com/api/
+  https://e2bapi.vercel.app/api/
 ```
 
 > #### No parameter required ❌
@@ -69,7 +69,7 @@ Host your own instance of e2bapi on Render.
 
 ```javascript
 import axios from "axios";
-const resp = await axios.get("https://e2bapi.onrender.com/api/");
+const resp = await axios.get("https://e2bapi.vercel.app/api/");
 console.log(resp.data);
 ```
 
@@ -90,7 +90,7 @@ console.log(resp.data);
 ### Endpoint
 
 ```bash
-  https://e2bapi.onrender.com/api/word
+  https://e2bapi.vercel.app/api/word
 ```
 
 #### Parameters
@@ -103,7 +103,7 @@ console.log(resp.data);
 
 ```javascript
 import axios from "axios";
-const resp = await axios.get("https://e2bapi.onrender.com/api/hello");
+const resp = await axios.get("https://e2bapi.vercel.app/api/hello");
 console.log(resp.data);
 ```
 
