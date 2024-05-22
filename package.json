@@ -1,18 +1,19 @@
-{
-  "name": "english2bengali",
-  "version": "1.0.0",
-  "description": "An api to translate english words to bengali",
-  "main": "./api/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "itzzzme",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^1.7.1",
-    "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2"
-  },
-  "type": "module"
-}
+  {
+    "name": "english2bengali",
+    "version": "1.0.0",
+    "description": "An api to translate english words to bengali",
+    "main": "./api/server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "echo \"No build steps defined\""
+    },
+    "author": "itzzzme",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^1.7.1",
+      "cheerio": "^1.0.0-rc.12",
+      "dotenv": "^16.4.5",
+      "express": "^4.19.2"
+    },
+    "type": "module"
+  }
