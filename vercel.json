@@ -1,0 +1,5 @@
+{
+    "versino":1,
+    "builds":[{"src":"./api/server.js","use":"@vercel/node"}],
+    "routes":[{"src":"/(.*)","dest":"/"}]
+}
