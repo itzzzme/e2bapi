@@ -15,6 +15,7 @@
 - [Installation](#installation)
   - [Local installation](#local-installation)
 - [Deployment](#deployment)
+  - [Vercel](#Vercel)   
   - [Render](#Render)
 - [Documentation](#documentation)
 - [Pull Requests](#pull-requests)
@@ -42,6 +43,8 @@ $ npm start #or npm run devStart
 ```
 
 > # Deployment
+
+### Vercel
 
 Host your own instance of e2bapi on vercel
 
